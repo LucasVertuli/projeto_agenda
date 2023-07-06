@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda telefônica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=Lora:ital,wght@1,500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/agenda-telefonica.jpg" alt="Imagem de agenda telefônica">
+            <h1>Contatos</h1>
+        </header>
+        
+        <form id="agenda-telefonica">
+
+            <input type="text" id="nomeContato" required placeholder="Nome do contato">
+            <input type="tel" id="codigoArea" required placeholder="DDD" min="01" max="99">
+            <input type="tel" id="numeroContato" required placeholder="Telefone" min="000000001" max="999999999">
+            <button type="submit" id="adic">Adicionar +</button>
+            <button type="reset" id="rem">Remover -</button> 
+
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do contato
+                    </th>
+                    <th>
+                        Código de área
+                    </th>
+                    <th>
+                        Número do contato
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+        </table>
+        <footer>
+            <p>
+                &copy; Todos os direitos reservados - Lucas Vertuli 2023
+            </p>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
